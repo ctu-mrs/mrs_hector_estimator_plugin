@@ -1,22 +1,22 @@
 #include <mrs_uav_state_estimators/estimators/state/state_generic.h>
 
-namespace hector
+namespace hector_garmin
 {
 
-const char estimator_name[] = "hector";
+const char estimator_name[] = "hector_garmin";
 const bool is_core_plugin = false;
 
-class Hector : public mrs_uav_state_estimators::StateGeneric {
+class HectorGarmin : public mrs_uav_state_estimators::StateGeneric {
 public:
-  Hector() : mrs_uav_state_estimators::StateGeneric(estimator_name, is_core_plugin) {
+  HectorGarmin() : mrs_uav_state_estimators::StateGeneric(estimator_name, is_core_plugin) {
   }
 
-  ~Hector(void) {
+  ~HectorGarmin(void) {
   }
 };
 
-}  // namespace hector
+}  // namespace hector_garmin
 
 #include <pluginlib/class_list_macros.h>
-PLUGINLIB_EXPORT_CLASS(hector::Hector, mrs_uav_managers::StateEstimator)
+PLUGINLIB_EXPORT_CLASS(hector_garmin::HectorGarmin, mrs_uav_managers::StateEstimator)
 
