@@ -1,0 +1,5 @@
+<library path="lib/libMrsUavStateEstimators_Hector">
+  <class name="hector/HectorEstimatorPlugin" type="hector::Hector" base_class_type="mrs_uav_managers::StateEstimator">
+    <description>Hector SLAM state estimator</description>
+  </class>
+</library>
